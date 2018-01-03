@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-public class P3_FindDuplicateInLimitedRangeArray {
+public class P03_FindDuplicateInLimitedRangeArray {
 
 	public static void main(String[] args) {
 		int[] a = new int[]{1, 3, 5, 2, 4, 5};

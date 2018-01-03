@@ -2,7 +2,7 @@ package anton.logvinenko.fivehundredproblems.array;
 
 import javafx.util.Pair;
 
-public class P4_FindLargestSubarrayConsequtiveNumbers {
+public class P04_FindLargestSubarrayConsequtiveNumbers {
 
 	static Pair<Integer, Integer> largestSubArrayOfConsecutiveNumbers(int[] aa) {
 		int globalStart = 0;

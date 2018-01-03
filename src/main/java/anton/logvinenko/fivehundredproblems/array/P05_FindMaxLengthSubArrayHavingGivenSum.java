@@ -5,7 +5,7 @@ import javafx.util.Pair;
 import java.util.HashMap;
 import java.util.Map;
 
-public class P5_FindMaxLengthSubArrayHavingGivenSum {
+public class P05_FindMaxLengthSubArrayHavingGivenSum {
 
 	static Pair<Integer, Integer> findSubArray(int[] a, int expectedSum) {
 		int sum = 0;

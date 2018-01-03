@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * http://www.techiedelight.com/find-pair-with-given-sum-array/
  */
-public class P0_FindPairWithGivenSum {
+public class P00_FindPairWithGivenSum {
 
 	public static void main(String[] args) {
 		int a[] = new int[]{9, 5, 7, 9, 6, 3, 2, 7, 0, 43};

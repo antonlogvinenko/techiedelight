@@ -5,7 +5,7 @@ import javafx.util.Pair;
 import java.util.HashMap;
 import java.util.Map;
 
-public class P6_FindMaxLengthSubArrayWithEqualNumberOf0sAnd1s {
+public class P06_FindMaxLengthSubArrayWithEqualNumberOf0sAnd1s {
 
 	/**
 	 * find subarray with 0 sum

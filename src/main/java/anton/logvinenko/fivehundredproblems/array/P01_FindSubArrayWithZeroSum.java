@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class P1_FindSubArrayWithZeroSum {
+public class P01_FindSubArrayWithZeroSum {
 
 	static Pair<Integer, Integer> findZeroSumSubArray(int[] a) {
 		Map<Integer, Integer> sums = new HashMap<>();

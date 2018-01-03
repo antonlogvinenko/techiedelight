@@ -2,7 +2,7 @@ package anton.logvinenko.fivehundredproblems.array;
 
 import static anton.logvinenko.fivehundredproblems.array.Util.swap;
 
-public class P2_SortBinaryArrayInLinearTime {
+public class P02_SortBinaryArrayInLinearTime {
 
 
 	// 0 0 0 0 0 0 0 1 1 1 1 0

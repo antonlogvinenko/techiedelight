@@ -3,7 +3,7 @@ package anton.logvinenko.fivehundredproblems.array;
 
 import static anton.logvinenko.fivehundredproblems.array.Util.print;
 
-public class P7_SortArrayContaining012 {
+public class P07_SortArrayContaining012 {
 	///0 0 0 [1] 1 1 1 [2] 2 2 2 (0)
 
 	///0 0 0 0 [2] 2 2 2 2 (0) 2

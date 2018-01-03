@@ -3,7 +3,7 @@ package anton.logvinenko.fivehundredproblems.array;
 import static anton.logvinenko.fivehundredproblems.array.Util.print;
 import static anton.logvinenko.fivehundredproblems.array.Util.swap;
 
-public class P8_InplaceMergeTwoSortedArrays {
+public class P08_InplaceMergeTwoSortedArrays {
 
 	/*
 	1, 4, 5, 9
