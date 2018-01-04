@@ -14,8 +14,9 @@ public class P12_ReplaceEachElementWithProductOfAllOtherElements {
     }
 
     /**
+     * Receives product of a[0]...a[i-1] as `leftProduct` argument
      * Returns product of a[i]...a[n-1]
-     * Sets 
+     * Sets a[i]
      */
     private static int recursion(int[] a, int i, int leftProduct) {
         if (i == a.length) {
