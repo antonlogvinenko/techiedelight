@@ -4,12 +4,14 @@ package anton.logvinenko.fivehundredproblems.array;
 /**
  * http://www.techiedelight.com/find-index-0-replaced-get-maximum-length-sequence-of-continuous-ones/
  *
+ * I believe that {@link #slidingWindow} and {@link #continuousSequences}
+ * are actually the same algorithm
  */
 public class P10_FindIndexOfZeroToBeReplacedForLongestSeqOfOnes {
 
     public static void main(String[] args) {
         int[] a = new int[]{0, 0, 1, 0, 1, 1, 1, 0, 1, 1};
-        System.out.println(findIndexTririvial(a));
+        System.out.println(continuousSequences(a));
         System.out.println(slidingWindow(a));
     }
 
@@ -65,7 +67,7 @@ public class P10_FindIndexOfZeroToBeReplacedForLongestSeqOfOnes {
      *
      * 4) Current length is incremented if we encounter new 1s in the right cluster.
      */
-    private static int findIndexTririvial(int[] a) {
+    private static int continuousSequences(int[] a) {
         int lastZeroIndex = 0;
         int currentSequenceLength = 0;
 
@@ -82,6 +84,7 @@ public class P10_FindIndexOfZeroToBeReplacedForLongestSeqOfOnes {
 
             if (currentSequenceLength > longestSequenceLength) {
                 bestZeroIndex = lastZeroIndex;
+                longestSequenceLength = currentSequenceLength;
             }
         }
 
