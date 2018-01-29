@@ -4,14 +4,10 @@ import anton.logvinenko.sorting.*;
 import anton.logvinenko.sorting.lulz.BubbleSortShort;
 import anton.logvinenko.sorting.lulz.QuickSortShort;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.stream.Stream;
+import java.util.*;
 
 import static java.lang.Integer.MIN_VALUE;
 import static java.lang.String.format;
-import static java.lang.System.currentTimeMillis;
 
 /**
  * Hello world!
@@ -53,27 +49,11 @@ public class AllSortsOfSorts {
 	}
 
 	public static void main(String[] args) {
-		Random rand = new Random(currentTimeMillis());
-		int length = 100;
-
-		Stream<SortAlgorithm> ss = sortsAlgorithms.stream().map(x -> {
-			try {
-				return x.newInstance();
-			} catch (InstantiationException | IllegalAccessException e) {
-				throw new RuntimeException(e);
-			}
-		});
-
-		ss.forEach(algorithm -> {
-			boolean passed = true;
-			for (int i = 0; i < 100; i++) {
-				int[] unsorted = rand.ints().limit(length).toArray();
-				algorithm.sort(unsorted);
-				validate(unsorted);
-				passed = passed && validate(unsorted);
-				if (!passed) break;
-			}
-			System.out.println(String.format("%s\t\t%s", algorithm.getClass().getSimpleName(), passed ? "passed" : "failed"));
-		});
+		Map<Integer, String> m = new HashMap<>();
+		m.put(3, "c");
+		m.put(2, "b");
+		m.put(1, "a");
+		m.put(4, "d");
+		System.out.println(m.values());
 	}
 }

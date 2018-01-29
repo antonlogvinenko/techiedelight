@@ -1,5 +1,7 @@
 package anton.logvinenko.fivehundredproblems.array;
 
+import java.util.Arrays;
+
 class Util {
 	static void swap(int[] a, int i, int j) {
 		int x = a[i];
@@ -19,5 +21,9 @@ class Util {
 			System.out.print(" ");
 		}
 		System.out.println();
+	}
+
+	static void assertEquality(int[] a, int[] b) {
+		Arrays.equals(a, b);
 	}
 }

@@ -8,16 +8,16 @@ import java.util.List;
 /**
  * http://www.techiedelight.com/find-pair-with-given-sum-array/
  */
-public class P00_FindPairWithGivenSum {
+public class FindPairWithGivenSum implements Runnable {
 
-	public static void main(String[] args) {
+	public void run() {
 		int a[] = new int[]{9, 5, 7, 9, 6, 3, 2, 7, 0, 43};
 		int p = 9;
 
 //		System.out.println(findNaive(a));
 		System.out.println(findWithSort(a, p));
 		System.out.println(findAllPairsWithSort(a, p));
-//		System.out.println(findWithHash(a));
+		System.out.println(findWithHash(a));
 	}
 
 	private static int findWithHash(int[] a) {
@@ -34,7 +34,7 @@ public class P00_FindPairWithGivenSum {
 
 			int sum = x + y;
 			if (sum == p) {
-				return List.of(i, j);
+//				return List.of(i, j);
 			}
 			if (sum > p) {
 				i--;
@@ -54,7 +54,7 @@ public class P00_FindPairWithGivenSum {
 			int y = a[j];
 			int sum = x + y;
 			if (sum == p) {
-				allPairs.add(List.of(x, y));
+//				allPairs.add(List.of(x, y));
 			}
 			if (sum > p) {
 				i--;

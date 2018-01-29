@@ -28,7 +28,7 @@ public class P12_ShuffleArrayOfElements {
 
 		for (int i = 0; i < n - 1; i++) {
 			// (i, n - 1]     -n -> (i-n, -1]     (* -1) -> [1, n-i)      -1 -> [0, n-i-1)
-			int j = - r.nextInt(n - i - 1) -1 + n;
+			int j = -r.nextInt(n - i - 1) - 1 + n;
 			Util.swap(array, i, j);
 		}
 	}
