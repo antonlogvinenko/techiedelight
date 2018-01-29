@@ -4,10 +4,15 @@ import static junit.framework.Assert.assertEquals;
 
 /**
  * http://www.techiedelight.com/find-majority-element-in-an-array-boyer-moore-majority-vote-algorithm/
+ *
+ * Majority element is x if x is present in an array more than n/2 times,
+ * where n is array's length
+ *
  * Obvious implementations:
  * 1) for each element, calculate sum, O(n^2) time
  * 2) sort and then calculate cluster length
  * 3) use hash map to calculate frequency
+ * 4) Boyer-Moore algorithm (assumes the majority element exists)
  */
 public class FindMajorityElementInAnArray implements Runnable {
 
