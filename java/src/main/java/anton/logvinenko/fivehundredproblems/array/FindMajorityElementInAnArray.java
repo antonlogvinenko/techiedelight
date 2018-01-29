@@ -10,9 +10,10 @@ import static junit.framework.Assert.assertEquals;
  *
  * Obvious implementations:
  * 1) for each element, calculate sum, O(n^2) time
- * 2) sort and then calculate cluster length
- * 3) use hash map to calculate frequency
- * 4) Boyer-Moore algorithm (assumes the majority element exists)
+ * 2) sort and then calculate cluster length, O(n*log(n)) time
+ * 3) use hash map to calculate frequency, O(n) space
+ * 4) Boyer-Moore algorithm (assumes the majority element exists),
+ *    linear time and space
  */
 public class FindMajorityElementInAnArray implements Runnable {
 
