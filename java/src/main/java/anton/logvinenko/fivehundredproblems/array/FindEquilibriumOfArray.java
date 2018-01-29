@@ -14,6 +14,8 @@ public class FindEquilibriumOfArray implements Runnable {
 		assertEquals(3, e);
 	}
 
+	// 1 1 1 1 1    1 3 4 5 6
+
 	private int initialAttempt(int[] a) {
 		int sum = 0;
 		for (int i : a) {

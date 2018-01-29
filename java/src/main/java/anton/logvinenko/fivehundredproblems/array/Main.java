@@ -7,8 +7,9 @@ public class Main {
 
 	private static final List<Class<? extends Runnable>> algorithms =
 			new ArrayList<>() {{
-//				add(FindPairWithGivenSum.class);
+				add(FindPairWithGivenSum.class);
 				add(FindEquilibriumOfArray.class);
+				add(FindMajorityElementInAnArray.class);
 			}};
 
 	public static void main(String[] args) throws IllegalAccessException, InstantiationException {
