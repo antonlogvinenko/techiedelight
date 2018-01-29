@@ -2,6 +2,9 @@ package anton.logvinenko.fivehundredproblems.array;
 
 import static junit.framework.Assert.assertEquals;
 
+/**
+ * http://www.techiedelight.com/find-equilibrium-index-array/
+ */
 public class FindEquilibriumOfArray implements Runnable {
 
 	@Override
