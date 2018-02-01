@@ -8,8 +8,10 @@ public class Main {
 	private static final List<Class<? extends Runnable>> algorithms =
 			new ArrayList<>() {{
 				add(FindPairWithGivenSum.class);
+				add(FindSubArrayWithZeroSum.class);
 				add(FindEquilibriumOfArray.class);
 				add(FindMajorityElementInAnArray.class);
+				add(MoveAllZerosPresentToTheEnd.class);
 			}};
 
 	public static void main(String[] args) throws IllegalAccessException, InstantiationException {

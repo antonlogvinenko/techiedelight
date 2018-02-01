@@ -7,7 +7,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class P01_FindSubArrayWithZeroSum {
+import static junit.framework.Assert.assertEquals;
+
+public class FindSubArrayWithZeroSum implements Runnable {
 
 	static Pair<Integer, Integer> findZeroSumSubArray(int[] a) {
 		Map<Integer, Integer> sums = new HashMap<>();
@@ -51,10 +53,11 @@ public class P01_FindSubArrayWithZeroSum {
 		return results;
 	}
 
-	public static void main(String[] args) {
+	@Override
+	public void run() {
 		int[] a = new int[]{4, 7, 8, -10, 5, -10, -4};
-		//4 11 19 9 14 4
-		System.out.println(findZeroSumSubArray(a));
-		System.out.println(findAllZeroSumSubArrays(a));
+		assertEquals(new Pair<>(1, 5), findZeroSumSubArray(a));
+		assertEquals(List.of(new Pair<>(1, 5), new Pair<>(0, 6)),
+				findAllZeroSumSubArrays(a));
 	}
 }
