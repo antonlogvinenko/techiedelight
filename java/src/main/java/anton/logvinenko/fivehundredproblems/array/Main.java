@@ -15,6 +15,7 @@ public class Main {
 				add(ReplaceEachElementWithProductOfAllOtherElements.class);
 				add(FindLongestBitonicSubarray.class);
 				add(FindMaxDiffBetweenTwoElemsLesserBetweenLarger.class);
+				add(FindLargestSubarray.class);
 			}};
 
 	public static void main(String[] args) throws IllegalAccessException, InstantiationException {
