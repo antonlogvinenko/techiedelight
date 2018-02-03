@@ -1,8 +1,8 @@
 package anton.logvinenko.fivehundredproblems.array;
 
-public class P12_ReplaceEachElementWithProductOfAllOtherElements {
+public class ReplaceEachElementWithProductOfAllOtherElements implements Runnable {
 
-    public static void main(String[] args) {
+    public void run() {
         int[] a = new int[]{1, 2, 3, 4, 5};
         int[] b = new int[]{1, 2, 3, 4, 5};
 

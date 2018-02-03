@@ -12,6 +12,8 @@ public class Main {
 				add(FindEquilibriumOfArray.class);
 				add(FindMajorityElementInAnArray.class);
 				add(MoveAllZerosPresentToTheEnd.class);
+				add(ReplaceEachElementWithProductOfAllOtherElements.class);
+				add(FindLongestBitonicSubarray.class);
 			}};
 
 	public static void main(String[] args) throws IllegalAccessException, InstantiationException {
